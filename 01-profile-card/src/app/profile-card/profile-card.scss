@@ -1,0 +1,38 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  width: 400px;
+  padding: 30px;
+  padding-top: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+.profile-card h2 {
+  text-align: center;
+}
+
+.information-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.information-inputs input,
+textarea {
+  border: none;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea {
+  max-width: 97%;
+  min-width: 97%;
+}

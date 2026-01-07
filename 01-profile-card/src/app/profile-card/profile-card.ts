@@ -10,5 +10,5 @@ import { FormsModule } from '@angular/forms';
 export class ProfileCard {
   name: string = 'Mahmoud Abbes';
   age: number = 21;
-  description: string = 'Passionnate web developper looking to boost his skills';
+  description: string = 'Passionnate web developper looking to boost his skills.';
 }
