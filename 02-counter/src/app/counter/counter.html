@@ -6,5 +6,9 @@
       <button (click)="increment()">Increment</button>
       <button (click)="decrement()">Decrement</button>
     </div>
+
+    <div [ngClass]="getCounterState()">
+      <p>This counter is {{ getCounterState() }}</p>
+    </div>
   </div>
 </div>

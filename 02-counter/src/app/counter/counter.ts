@@ -17,4 +17,14 @@ export class Counter {
   decrement() {
     this.counter--;
   }
+
+  getCounterState(): string {
+    if (this.counter > 0) {
+      return 'positive';
+    } else if (this.counter < 0) {
+      return 'negative';
+    } else {
+      return 'neutral';
+    }
+  }
 }
