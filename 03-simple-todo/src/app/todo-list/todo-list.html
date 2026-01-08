@@ -1,0 +1,24 @@
+<div class="todo-container">
+  <div class="todo-content">
+    <div class="todo-header">
+      <h2>Todo List</h2>
+      <button (click)="clearTasks()">Clear Tasks</button>
+    </div>
+
+    <div class="insert-bar">
+      <input type="text" [(ngModel)]="currentTask" />
+      <button (click)="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-list" *ngFor="let task of taskList; let i = index">
+      <ul>
+        <li>
+          <p>
+            {{ task }}
+          </p>
+          <button (click)="deleteTask(i)">Detete</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px 20px 25px 20px;
+  width: 400px;
+  min-height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto';
+  margin-top: 20px;
+}
+
+.todo-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-header h2 {
+  width: 60%;
+  font-family: 'Lobster';
+}
+
+.todo-header button {
+  border: none;
+  border: 2px solid #adadad;
+  border-radius: 5px;
+  padding: 10px;
+  color: gray;
+}
+
+.todo-header button:hover {
+  background-color: #b4b4b4;
+  color: white;
+  cursor: pointer;
+}
+
+.insert-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.insert-bar input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.insert-bar button {
+  border: none;
+  border: 2px solid #7faed8;
+  border-radius: 5px;
+  background-color: #a7c7e7;
+  color: #1b3a57;
+  padding: 10px;
+}
+
+.insert-bar button:hover {
+  background-color: #89aed6;
+  cursor: pointer;
+}
+
+.task-list {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: -10px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 2px solid #adadad;
+  border-radius: 5px;
+}
+
+.task-list li p {
+  width: 70%;
+}
+
+.task-list li button {
+  background-color: #f7a6a6;
+  border: none;
+  border: 2px solid #e28888;
+  border-radius: 5px;
+  color: #7a1a1a;
+  padding: 10px;
+}
+
+.task-list li button:hover {
+  cursor: pointer;
+  background-color: #e57b7b;
+}
