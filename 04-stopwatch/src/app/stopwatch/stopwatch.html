@@ -1,0 +1,11 @@
+<div class="stopwatch-container">
+  <div class="stopwatch-content">
+    <h2>Stopwatch</h2>
+    <p>{{ elapsedTime | number : '1.1-1' }} seconds</p>
+
+    <div class="stopwatch-controls">
+      <button (click)="isRunning ? stop() : start()">{{ isRunning ? 'Stop' : 'Start' }}</button>
+      <button [disabled]="isRunning" (click)="reset()">Reset</button>
+    </div>
+  </div>
+</div>

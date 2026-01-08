@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.stopwatch-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.stopwatch-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.stopwatch-content h2 {
+  margin-bottom: 5px;
+}
+
+.stopwatch-content p {
+  font-size: 20px;
+}
+
+.stopwatch-controls {
+  display: flex;
+  height: 40px;
+  gap: 5px;
+}
+
+.stopwatch-controls button {
+  width: 90px;
+}
