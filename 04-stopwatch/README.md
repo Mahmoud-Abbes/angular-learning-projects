@@ -4,7 +4,7 @@ Angular learning project to practice timers and interval-based updates.
 
 ## Purpose
 
-Learn how to use `setInterval` and `clearInterval` in Angular components.
+Learn how to use `setInterval`, `clearInterval`, and pipes in Angular components.
 
 ## What I practiced
 
@@ -12,6 +12,7 @@ Learn how to use `setInterval` and `clearInterval` in Angular components.
 - Stopping updates with `clearInterval`
 - Binding time values to the template
 - Handling user events (start, stop, reset)
+- Using predefined pipes
 
 ## Tech
 
