@@ -14,7 +14,7 @@
 
     <div *ngIf="gameOver" class="game-over">
       <p *ngIf="isWinner">Congratulations your guess is correct!</p>
-      <p *ngIf="!isWinner">Better luck next time. The number was : {{ seceretNumber }}</p>
+      <p *ngIf="!isWinner">Better luck next time. The number was : {{ secretNumber }}</p>
       <button (click)="resetGame()">Play Again</button>
     </div>
   </div>

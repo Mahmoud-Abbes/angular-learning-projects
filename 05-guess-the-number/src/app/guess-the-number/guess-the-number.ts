@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './guess-the-number.scss',
 })
 export class GuessTheNumber {
-  seceretNumber: number = this.generateRandomNumber();
+  secretNumber: number = this.generateRandomNumber();
   guessedNumber?: number;
   isWinner: boolean = false;
   gameOver: boolean = false;
@@ -33,7 +33,7 @@ export class GuessTheNumber {
   }
 
   private evaluateGuess(): boolean {
-    if (this.guessedNumber === this.seceretNumber) {
+    if (this.guessedNumber === this.secretNumber) {
       return true;
     }
     return false;
@@ -48,7 +48,7 @@ export class GuessTheNumber {
           this.gameOver = true;
           return;
         }
-        this.guessState = this.guessedNumber! > this.seceretNumber ? 'Too High!' : 'Too Low!';
+        this.guessState = this.guessedNumber! > this.secretNumber ? 'Too High!' : 'Too Low!';
         if (this.attemptsLeft === 0) {
           this.gameOver = true;
         }
@@ -57,7 +57,7 @@ export class GuessTheNumber {
   }
 
   resetGame() {
-    this.seceretNumber = this.generateRandomNumber();
+    this.secretNumber = this.generateRandomNumber();
     this.attemptsLeft = GuessTheNumber.MAX_ATTEMPTS;
     this.gameOver = false;
     this.isWinner = false;
