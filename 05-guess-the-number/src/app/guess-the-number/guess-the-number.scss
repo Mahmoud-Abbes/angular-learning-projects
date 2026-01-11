@@ -1,0 +1,52 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4aaf4e;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+input:focus {
+  border-color: #7f7f7f;
+  outline: none;
+}
+
+.game-over {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
