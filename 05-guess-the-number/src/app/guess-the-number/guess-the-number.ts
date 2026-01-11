@@ -18,6 +18,7 @@ export class GuessTheNumber {
   private static readonly MAX_ATTEMPTS = 10;
 
   attemptsLeft: number = GuessTheNumber.MAX_ATTEMPTS;
+  guessState: string = '';
 
   private generateRandomNumber(): number {
     return Math.floor(Math.random() * GuessTheNumber.MAX_NUMBER);
@@ -47,7 +48,7 @@ export class GuessTheNumber {
           this.gameOver = true;
           return;
         }
-
+        this.guessState = this.guessedNumber! > this.seceretNumber ? 'Too High!' : 'Too Low!';
         if (this.attemptsLeft === 0) {
           this.gameOver = true;
         }
@@ -60,5 +61,7 @@ export class GuessTheNumber {
     this.attemptsLeft = GuessTheNumber.MAX_ATTEMPTS;
     this.gameOver = false;
     this.isWinner = false;
+    this.guessedNumber = undefined;
+    this.guessState = '';
   }
 }

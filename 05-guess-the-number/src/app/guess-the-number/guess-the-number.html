@@ -7,7 +7,10 @@
     <button (click)="submitGuess()" *ngIf="!gameOver" [disabled]="!guessedNumber">
       Submit Guess
     </button>
-    <p *ngIf="!gameOver">Attempts Left : {{ attemptsLeft }}</p>
+    <div *ngIf="!gameOver" style="text-align: center">
+      <p>Attempts Left : {{ attemptsLeft }}</p>
+      <p style="margin-top: 0px">{{ guessState }}</p>
+    </div>
 
     <div *ngIf="gameOver" class="game-over">
       <p *ngIf="isWinner">Congratulations your guess is correct!</p>
